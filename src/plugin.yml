@@ -1,0 +1,5 @@
+name: PerWorldLimit
+version: 0.1
+author: rfsantos1996
+main: com.jabyftw.pwl.PerWorldLimit
+description: Limit players on a world
