@@ -41,6 +41,7 @@ public class PerWorldLimit extends JavaPlugin implements Listener {
         for (String key : config.getConfigurationSection("worlds").getKeys(false)) {
             limit.put(getServer().getWorld(key), config.getInt("worlds." + key + ".limit"));
         }
+        getServer().getPluginManager().registerEvents(this, this);
         getLogger().log(Level.INFO, "Enabled.");
     }
 
